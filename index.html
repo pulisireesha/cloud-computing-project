@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud Computing Network</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #eef6ff;
+            text-align: center;
+        }
+
+        header {
+            background: #1976d2;
+            color: white;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px gray;
+        }
+
+        .service {
+            display: inline-block;
+            width: 180px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            background: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0d47a1;
+        }
+
+        #message {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>☁️ Cloud Computing</h1>
+    <p>Applications of Computer Networks in Cloud Computing</p>
+</header>
+
+<div class="box">
+
+    <h2>🌐 Applications</h2>
+
+    <div class="service">
+        <h3>☁️ Cloud Storage</h3>
+        <p>Store files online.</p>
+    </div>
+
+    <div class="service">
+        <h3>💻 Cloud Applications</h3>
+        <p>Use software through the internet.</p>
+    </div>
+
+    <div class="service">
+        <h3>📊 Data Sharing</h3>
+        <p>Share data between users.</p>
+    </div>
+
+    <div class="service">
+        <h3>🔄 Backup</h3>
+        <p>Backup data securely.</p>
+    </div>
+
+</div>
+
+<div class="box">
+
+    <h2>☁️ Cloud Server</h2>
+
+    <p>Status: <b id="status">🟢 Online</b></p>
+
+    <button onclick="connectCloud()">
+        Connect to Cloud
+    </button>
+
+    <p id="message"></p>
+
+</div>
+
+<div class="box">
+
+    <h2>📡 Network Status</h2>
+
+    <p>🌐 Internet: 🟢 Connected</p>
+    <p>☁️ Cloud Server: 🟢 Online</p>
+    <p>💾 Cloud Storage: 🟢 Available</p>
+    <p>🔐 Security: 🟢 Secure</p>
+
+</div>
+
+<div class="box">
+
+    <h2>✅ Benefits</h2>
+
+    <p>✔ Access data from anywhere</p>
+    <p>✔ Easy data sharing</p>
+    <p>✔ Data backup</p>
+    <p>✔ Cost reduction</p>
+    <p>✔ Scalable services</p>
+
+</div>
+
+<script>
+
+function connectCloud() {
+
+    document.getElementById("status").innerHTML =
+        "🟢 Connected";
+
+    document.getElementById("message").innerHTML =
+        "✅ Successfully connected to cloud server!";
+}
+
+</script>
+
+</body>
+</html>
